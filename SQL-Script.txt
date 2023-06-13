@@ -1,0 +1,15 @@
+DROP TRIGGER 'trigger_name';
+
+ALTER TABLE 'table_name' DROP 'field_name';
+
+ALTER TABLE 'table_name'
+ADD 'field_name' 'domain_if_exists';
+
+CREATE OR ALTER trigger 'trigger_name' for tb_operacao_doc_ctt
+active after update position 0 (these depends on the default usage of the company)
+AS
+begin
+	(trigger code)
+end;
+
+commit work;
